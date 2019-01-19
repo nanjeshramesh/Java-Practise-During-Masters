@@ -1,2 +1,2 @@
 # Java-Practise-During-Masters
-Made it a habbit to learn java programming everyday.
+Made it a habbit to learn & practise java programming everyday.

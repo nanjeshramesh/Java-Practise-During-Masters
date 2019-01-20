@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+  
+
+
+   public class JavaStdinAndStdout {
+
+    public static void main ( String args[]){
+
+  Scanner i= new Scanner(System.in);
+        int n = i.nextInt();
+
+        double d = i.nextDouble();
+
+   i.nextLine();
+
+  String s= i.nextLine();
+
+  System.out.println("String: " + s);
+
+        System.out.println("Double: " + d);
+
+        System.out.println("Int: " +n);
+
+    }
+    
+}
+
+

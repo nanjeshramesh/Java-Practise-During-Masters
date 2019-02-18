@@ -74,30 +74,32 @@ import java.util.Scanner;
 
 public class Solution {
 
-static boolean isAnagram(String A, String B) {
-        // Complete the function
-int sum = 0;
-       int aSum = 0;
-       
-       char[] ac = A.trim().toLowerCase().toCharArray();
-       char[] bc = B.trim().toLowerCase().toCharArray();
-       
-       for(int i:ac) {
-           sum+=i;
-       }
-       
-       aSum = sum;
-       sum = 0;
-       
-       for(int i:bc) {
-           sum+=i;
-       }
-       
-       if(sum==aSum) return true;
-       else return false;
-       
-    }
 
+static boolean isAnagram(String A, String B) {
+      //Complete the function 
+       int temp,i;  int arr[]=new int[26];
+        
+         if(A.length()!=B.length()){return false;}
+       for(i=0;i<A.length();i++)
+           {
+           temp=A.charAt(i);
+           if(temp>=65 && temp<=90){arr[temp-65]++;}
+                 else if(temp>=97 && temp<=122){arr[temp-97]++;}
+       }
+       for(i=0;i<A.length();i++)
+           {
+           temp=B.charAt(i);
+           if(temp>=65 && temp<=90){arr[temp-65]--;}
+                 else if(temp>=97 && temp<=122){arr[temp-97]--;}
+       }
+       for(i=0;i<26;i++)
+           {
+           if(arr[i]!=0) return false;
+           
+       }
+       return true;
+   
+   }
     public static void main(String[] args) {
     
         Scanner scan = new Scanner(System.in);

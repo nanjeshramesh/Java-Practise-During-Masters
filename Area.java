@@ -36,7 +36,7 @@ public class Paint
         totalSqFt = 2 * width * height + 2 * length * height - DOOR*doors - WINDOW*windows;
         //Compute the amount of paint needed
         paintNeeded = totalSqFt / COVERAGE;
-        //Print the length, width, and height of the room and the
+        ////Print the length, width, and height of the room and the
         //number of gallons of paint needed.
 		  System.out.println("Length= " + length + "\nWidth= " + width +  "\nHeight= " + height + "\nNumber of doors: " + doors + "\nNumber of windows: " + windows + "\nGallons of Paint Needed= " + paintNeeded);
 		  

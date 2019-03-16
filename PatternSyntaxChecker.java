@@ -12,7 +12,7 @@ Output Format
 
 For each test case, print Valid if the syntax of the given pattern is correct. Otherwise, print Invalid. Do not print the quotes.
 
-Sample Input
+Sample Input:
 
 3
 ([A-Z])(.+)

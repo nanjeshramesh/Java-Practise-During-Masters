@@ -2,7 +2,7 @@ In computing, End Of File (commonly abbreviated EOF) is a condition in a compute
 
 The challenge here is to read  lines of input until you reach EOF, then number and print all  lines of content.
 
-Hint: Java's Scanner.hasNext() method is helpful for this problem.
+Hint: Java's Scanner.hasNext() method is helpful for this problem....
 
 Input Format
 
